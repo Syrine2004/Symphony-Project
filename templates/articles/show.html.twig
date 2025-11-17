@@ -2,7 +2,8 @@
 {% block title %}{{ article.nom }}{% endblock %}
 {% block body %}
 <h1>{{ article.nom }}</h1>
-<p>{{ article.prix }}</p>
+<p>Prix : {{ article.prix }}</p>
+<p>Catégorie : {{ article.category.titre }}</p> {# (TP6 ÉTAPE 13) AJOUTE ÇA #}
 <hr>
 <a href="/">Retour</a>
 {% endblock %}
